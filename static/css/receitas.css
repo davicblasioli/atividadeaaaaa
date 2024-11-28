@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: inherit;
+}
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+}
+
+
+/* cabeçalho */
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+.mensagem{
+    margin-bottom: 30px;
+    font-size: 17px;
+    background-color: #8cd8a0;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    border-style: none;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+.titulo {
+    font-size: 49px;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+
+.flexp {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.input {
+    margin-top: 10px;
+    
+}
+
+.input1 {
+    margin-top: 10px;
+    width: 275px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: larger;
+}
+
+.input2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--preto);
+    width: 600px;
+    height: 70px;
+    padding-left: 20px;
+    font-size: larger;
+}
+
+.form {
+    margin: 20px;
+}
+
+.label1 {
+    font-size: x-large;
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+.bt5:hover {
+    background-color: var(--rodape2);
+    transform: scale(0.9, 0.9);
+}
+
+/* rodapé */
+.sectionII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+.rating{
+    margin-right: 35px;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+
+  @media screen and (max-width: 426px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .home {
+        font-size: 12px; 
+        padding: 8px 12px; 
+    }
+
+    .titulo {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .input1, .input2 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .bt5 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .sectionII {
+        padding: 10px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 20px;
+        margin: 5px;
+    }
+
+    .img3 {
+        width: 80px;
+    }
+
+    footer .p3 {
+        font-size: 12px;
+        padding: 5px;
+    }
+}  
+
+@media screen and (max-width: 320px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .input1, .input2 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .bt5 {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .sectionII {
+        padding: 15px;
+    }
+
+    .sig {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .ti {
+        font-size: 14px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 25px;
+    }
+
+    .img3 {
+        width: 80px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .p3 {
+        font-size: 10px;
+        padding: 10px;
+    }
+}

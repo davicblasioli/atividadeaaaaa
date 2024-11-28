@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: inherit;
+}
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+}
+
+
+/* cabeçalho */
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+.titulo {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    margin-top: 10px;
+    
+}
+
+.input1 {
+    margin-top: 5px;
+    width: 275px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: larger;
+}
+
+.input2 {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--preto);
+    width: 600px;
+    height: 70px;
+    padding-left: 20px;
+    font-size: larger;
+    
+}
+.form {
+    margin: 20px;
+}
+
+.label1 {
+    font-size: x-large;
+}
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: large;
+    border-style: none;
+    margin: 5;
+    margin-bottom: 20px;
+}
+
+.bt5:hover {
+    background-color: var(--rodape2);
+    transform: scale(0.9, 0.9);
+}
+
+.conta {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 30px;
+}
+
+.entrar {
+    font-weight: bold;
+    color: var(--rodape);
+}
+
+
+/* rodapé */
+.sectionII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+.rating{
+    margin-right: 35px;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+
+
+  @media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 36px;
+        padding: 30px 20px;
+    }
+
+    .input1, .input2 {
+        width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .bt5 {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .sectionII {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .siga {
+        text-align: center;
+    }
+
+    .ti, .sig {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .img3 {
+        width: 150px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 40px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .p3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 28px;
+        padding: 20px 10px;
+    }
+
+    .input1, .input2 {
+        width: 90%;
+        height: 45px;
+    }
+
+    .bt5 {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .home {
+        font-size: medium;
+    }
+
+    .rating {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .titulo {
+        font-size: 28px;
+        padding: 20px 10px;
+    }
+
+    .input1, .input2 {
+        width: 90%;
+        height: 40px;
+    }
+
+    .bt5 {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .home {
+        font-size: medium;
+    }
+
+    .sectionII {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .siga {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .sig, .ti {
+        font-size: 18px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 30px;
+    }
+
+    .img3 {
+        width: 120px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .p3 {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .rating {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .titulo {
+        font-size: 22px;
+        padding: 20px 10px;
+    }
+
+    .input1, .input2 {
+        width: 85%;
+        height: 38px;
+    }
+
+    .bt5 {
+        width: 85%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .home {
+        font-size: small;
+    }
+
+    .sectionII {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .siga {
+        margin-top: 15px;
+    }
+
+    .sig, .ti {
+        font-size: 16px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 25px;
+    }
+
+    .img3 {
+        width: 100px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    .p3 {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .rating {
+        margin-right: 0;
+        font-size: 25px;
+    }
+}

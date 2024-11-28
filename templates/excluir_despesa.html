@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Exclusão</title>
+    <link rel="stylesheet" href="/static/css/excluir.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>Excluir Despesa</h1>
+        <p>Tem certeza de que deseja excluir esta despesa?</p>
+        <div class="button-group">
+            <form action="{{ url_for('deletar_despesa', id=despesa[0]) }}" method="post">
+                <button class="confirm-button">Sim</button>
+            </form>
+        <a href="{{ url_for('tabela_despesas') }}"><button class="cancel-button">Não</button></a>
+        </div>
+    </div>
+    </body>
+</html>

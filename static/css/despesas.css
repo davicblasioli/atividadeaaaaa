@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: inherit;
+}
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+}
+
+
+/* cabeçalho */
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+.titulo {
+    font-size: 49px;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+
+.flexp {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.input {
+    margin-top: 10px;
+    
+}
+
+.input1 {
+    margin-top: 10px;
+    width: 275px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: larger;
+}
+
+.input2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--preto);
+    width: 600px;
+    height: 70px;
+    padding-left: 20px;
+    font-size: larger;
+}
+
+.form {
+    margin: 20px;
+}
+
+.label1 {
+    font-size: x-large;
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    border-style: none;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.bt5:hover {
+    background-color: var(--rodape2);
+    transform: scale(0.9, 0.9);
+}
+
+/* rodapé */
+.sectionII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+.rating{
+    margin-right: 35px;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+
+  @media screen and (max-width: 425px) {
+
+    /* Cabeçalho */
+    .logo {
+        width: 140px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        font-size: 12px;
+    }
+
+    /* Título */
+    .titulo {
+        font-size: 24px;
+        padding: 20px 10px;
+    }
+
+    /* Formulário */
+    .input1 {
+        width: 90%;  /* Largura ajustada */
+        height: 35px;  /* Reduzido a altura */
+        border-radius: 10px;
+        padding-left: 10px;  /* Menos padding */
+        font-size: 14px;
+    }
+    
+    .input2 {
+        width: 90%;  /* Largura ajustada */
+        height: 120px;  /* Menor altura para o campo de descrição */
+        border-radius: 10px;
+        border: 2px solid var(--preto);
+        padding-left: 15px;  /* Menos padding */
+        padding-top: 10px;  /* Menos padding no topo */
+        font-size: 14px;
+    }
+    
+    .form {
+        margin: 10px 0;  /* Menor margem entre os campos */
+    }
+    
+    /* Título */
+    .titulo {
+        font-size: 24px;
+        padding: 20px 10px;
+    }
+
+    .bt5 {
+        font-size: 14px;
+        padding: 12px;
+        width: 90%;
+    }
+
+    /* Rodapé */
+    .siga {
+        margin-top: 15px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 35px;
+        margin: 5px;
+    }
+
+    .img3 {
+        width: 120px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .rating > input:checked + label {
+        font-size: 30px;
+    }
+
+    .rating > label {
+        font-size: 30px;
+    }
+}  
+
+@media (max-width: 375px) {
+    header {
+        flex-direction: column; /* Coloca os itens do cabeçalho em coluna */
+        text-align: center;
+    }
+
+    .logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .home {
+        font-size: 14px;
+    }
+
+    .titulo {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .flex {
+        padding: 10px;
+    }
+
+    .input1, .input2 {
+        width: 90%;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .bt5 {
+        width: 85%;
+        font-size: 14px;
+        padding: 12px 0;
+        margin: 10px auto;
+    }
+
+    .sectionII {
+        padding: 10px;
+    }
+
+    .img3 {
+        width: 120px;
+    }
+
+    .rating > label {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .p3 {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .titulo {
+        font-size: 26px;
+        padding: 30px 10px;
+    }
+
+    .input1, .input2 {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .bt5 {
+        width: 75%;
+        font-size: 16px;
+        padding: 15px 0;
+    }
+
+    .sectionII {
+        padding: 20px;
+    }
+
+    .img3 {
+        width: 150px;
+    }
+
+    .rating > label {
+        font-size: 25px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        flex-direction: column; 
+        padding: 10px 15px; 
+        text-align: center;
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 10px
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .home {
+        font-size: 14px;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--rodape);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.p3 {
+    font-size: 12px; 
+    color: var(--branco);
+}
+
+
+@media (max-width: 375px) {
+    footer {
+        padding: 10px 15px; 
+    }
+
+    .p3 {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 376px) and (max-width: 768px) {
+    header {
+        padding: 15px 30px; 
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .home {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 15px 30px; 
+    }
+
+    .p3 {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="/static/css/excluir.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>Sair da conta</h1>
+        <p>Tem certeza de que deseja sair da conta?</p>
+        <div class="button-group">
+            <form action="{{ url_for('logout') }}" method="post">
+                <button class="confirm-button">Sim</button>
+            </form>
+        <a href="{{ url_for('controle') }}"><button class="cancel-button">Não</button></a>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: inherit;
+}
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+}
+
+
+/* cabeçalho */
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mensagem{
+    margin-bottom: 30px;
+    font-size: 17px;
+    background-color: #8cd8a0;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+.titulo {
+    font-size: 49px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.input1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--preto);
+    width: 600px;
+    height: 70px;
+    padding-left: 20px;
+    font-size: larger;
+}
+
+.label1 {
+    font-size: x-large;
+}
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: large;
+    border-style: none;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.bt5:hover {
+    background-color: var(--rodape2);
+    transform: scale(0.9, 0.9);
+}
+
+/* rodapé */
+.sectionII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+.rating{
+    margin-right: 35px;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+
+
+  @media screen and (max-width: 425px) {
+    body {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        font-size: 12px;
+    }
+
+    /* Título */
+    .titulo {
+        font-size: 24px;
+        padding: 20px 10px;
+    }
+
+    .input1 {
+        width: 100%;
+        font-size: small;
+    }
+
+    .bt5 {
+        width: 100%;
+        font-size: small;
+    }
+
+    .sectionII {
+        padding: 5px;
+    }
+
+    .siga {
+        padding: 0;
+        text-align: center;
+    }
+
+    .img3 {
+        width: 80px;
+    }
+
+    .rating > label {
+        font-size: 20px;
+    }
+}

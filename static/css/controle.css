@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.pad {
+    padding-bottom: 50px;
+    padding-top: 45px;
+}
+
+.collum{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    border-style: none;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.bt5:hover {
+    background-color: darkred;
+    transform: scale(0.9, 0.9);
+}
+
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+.tituloooo {
+    font-weight: bold;
+    font-size: 49px;
+    margin-bottom: 70px;
+}
+
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.cartao {
+    font-weight: bold;
+    padding-top: 15px;
+    width: 250px;
+    height: 200px;
+    background-color: #B6F2C6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: x-large;
+}
+
+.cartao:hover {
+    background-color: #a4eeb8;
+    transform: scale(1.09);
+}
+
+
+/* rodapé */
+.sectionII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+.rating{
+    margin-right: 35px;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+
+
+  @media (max-width: 320px) {
+    .logo {
+        width: 120px;
+    }
+
+    .tituloooo {
+        font-size: 24px;
+    }
+
+    .cartao {
+        width: 100%;
+        height: 140px;
+        font-size: small;
+    }
+
+    .sectionII {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .siga {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .rating {
+        margin: 5px 0;
+    }
+
+    .img3 {
+        width: 100px;
+        padding-top: 10px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 30px;
+    }
+
+    footer .p3 {
+        font-size: small;
+        padding: 10px;
+    }
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: large;
+    border-style: none;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+  }

@@ -1,0 +1,80 @@
+/* Reset básico */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #d6f8df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .mensagem{
+    margin-bottom: 30px;
+    font-size: 17px;
+    background-color: #8cd8a0;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+  h1 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .confirm-button {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .confirm-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .cancel-button {
+    background-color: #71a481;
+    color: #fff;
+  }
+  
+  .cancel-button:hover {
+    background-color: #aceabd;
+  }

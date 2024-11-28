@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: inherit;
+}
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+    --tabela1: #71a481;
+    --tabela2: #8cd8a0;
+    --tabela3: #b6f2c6;
+}
+
+
+/* cabeçalho */
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+
+
+
+.section1 {
+    color: var(--preto);
+    font-size: 180%;
+    background-image: url('/static/img/inicio.png');
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.palavrasimg {
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 520px;
+}
+
+.frasemenor {
+    font-size: 75%
+}
+
+.titulosec2 {
+    color: var(--preto);
+    font-size: 220%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section2 {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    padding: 0px 120px;
+}
+
+.section3 {
+    background-color: #edfdf2;
+    
+}
+
+.title {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explicacaoB {
+    background-color: #0000001b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 160px;
+}
+
+.explicacaoR {
+    background-color: #8cd88c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 160px;
+}
+
+.explicacaoB .Oq {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.explicacaoR .Oq {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.explicacaoB p {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 20px;
+}
+
+.explicacaoR p {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 20px;
+}
+
+.div-botao{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    border-style: none;
+}
+
+.bt5:hover {
+    background-color: var(--rodape2);
+    transform: scale(0.9, 0.9);
+}
+
+
+/* rodapé */
+.sectionII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+.rating{
+    margin-right: 35px;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }

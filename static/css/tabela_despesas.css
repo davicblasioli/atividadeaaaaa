@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: inherit;
+}
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+    --tabela1: #71a481;
+    --tabela2: #8cd8a0;
+    --tabela3: #b6f2c6;
+}
+
+
+/* cabeçalho */
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+.titulo {
+    font-size: 49px;
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.mensagem{
+    margin-bottom: 30px;
+    font-size: 17px;
+    background-color: #8cd8a0;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+table{
+    margin-bottom: 50px;
+}
+
+.mensagem{
+    margin-bottom: 10px;
+}
+
+th {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--tabela1);
+    border: solid black 2px;
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+td {
+    color: var(--preto);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--tabela2);
+    font-size: x-large;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid black 1.5px;
+}
+
+.bt7 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    border-style: none;
+}
+
+.bt8 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    border-style: none;
+}
+
+.bt8:hover {
+    background-color: darkred;
+    transform: scale(0.9, 0.9);
+}
+
+.bt5 {
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--rodape);
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    border-style: none;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.bt7:hover {
+    background-color: var(--rodape2);
+    transform: scale(0.9, 0.9);
+}
+
+.bt5:hover {
+    background-color: var(--rodape2);
+    transform: scale(0.9, 0.9);
+}
+
+/* rodapé */
+.sectionII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+.rating{
+    margin-right: 35px;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+
+
+  @media screen and (max-width: 426px) {
+    .logo {
+        width: 120px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    .home {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .bt5 {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    th, td {
+        font-size: small;
+        padding: 8px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionII {
+        padding: 15px;
+    }
+
+    .siga {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 30px;
+    }
+
+    .img3 {
+        width: 120px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .p3 {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .logo {
+        width: 100px;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .titulo {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .home {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .bt5 {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    th, td {
+        font-size: small;
+        padding: 8px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionII {
+        padding: 10px;
+    }
+
+    .siga {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .face, .whatsapp, .linkedin, .insta, .you {
+        width: 25px;
+    }
+
+    .img3 {
+        width: 80px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .p3 {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
